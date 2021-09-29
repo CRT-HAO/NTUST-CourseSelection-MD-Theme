@@ -5,7 +5,7 @@ NTUST Course Selection Website Material Design Theme
 ## 💡 How to start 如何開始
 如果你使用基於Chromium的瀏覽器，例如Google Chrome、Microsoft Edge等等...  
 建議搭配xStyle插件使用  
-> 你可以從Chrome線上應用程式商店安裝 [這裡](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
+> 你可以從Chrome線上應用程式商店安裝xStyle [這裡](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
 
 If you use a Chromium-based browser, such as Google Chrome, Microsoft Edge, etc...  
 It is recommended to use with xStyle extension.  
