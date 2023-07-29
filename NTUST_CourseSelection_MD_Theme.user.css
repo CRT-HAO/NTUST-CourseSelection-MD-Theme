@@ -1,0 +1,316 @@
+/* ==UserStyle==
+@name NTUST CourseSelection MD Theme
+@type less
+@homepageURL https://github.com/CRT-HAO/NTUST-CourseSelection-MD-Theme
+@updateURL https://raw.githubusercontent.com/CRT-HAO/NTUST-CourseSelection-MD-Theme/main/NTUST_CourseSelection_MD_Theme.user.css
+@originalMD5 null
+@author CRT_HAO
+==/UserStyle== */
+
+@-moz-document domain("courseselection.ntust.edu.tw") {
+    * {
+        font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+    }
+    body {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .navbar-brand::after {
+        content: " \a NTUST Course Selection System";
+        font-size: 10px;
+        white-space: pre;
+        position: relative;
+        top: -8px;
+    }
+    .main::after {
+        content: "NTUST臺科大選課系統 \a Material Design Theme By HAO";
+        font-size: 10px;
+        color: lightgray;
+        text-align: center;
+        width: 100%;
+        margin-top: 12px;
+        display: block;
+        white-space: pre;
+    }
+    .navbar {
+        border: none;
+        -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+    .navbar li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar li > a > span.caret {
+        display: none;
+    }
+    .navbar.label-warning {
+        background-color: #3F51B5;
+    }
+    .label-warning {
+        background-color: transparent;
+        padding: 0;
+    }
+    .label-warning > span {
+        color: black !important;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    .text-success {
+        color: white;
+    }
+    .navbar-brand {
+        color: white !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        top: -6px;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+        color: white;
+        background-color: transparent;
+        backdrop-filter: brightness(80%);
+    }
+    .navbar-default .navbar-nav > li > a{
+       transition: all 0.2s;
+    }
+    .navbar-default .navbar-nav > li:hover > a{
+        color: white;
+        background-color: transparent;
+        backdrop-filter: brightness(90%);
+    }
+    .panel {
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        border: none;
+        border-radius: 2px;
+    }
+    .panel > .header {
+        padding: 16px;
+    }
+    .dropdown-menu {
+        border: none;
+        border-radius: 2px !important;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        display: block;
+        opacity: 0;
+        transition: opacity 0.2s;
+        visibility: hidden;
+    }
+    li.open > .dropdown-menu {
+       opacity: 1;
+       visibility: visible;
+    }
+    .dropdown-menu > li > a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+    .dropdown-menu > li.disabled > a {
+        text-decoration: none !important;
+    }
+    table {
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, .12);
+        border-bottom: none;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-top-style: none;
+        border-bottom-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+    table tr {
+        transition: background-color .28s cubic-bezier(.4, 0, .2, 1);
+    }
+    table tr:hover {
+        background-color: #eee;
+    }
+    table tr td {
+        text-align: left !important;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        padding-right: 28px;
+        border: none !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12) !important;
+    }
+    table tr:first-child {
+        font-weight: bold;
+    }
+    #cartTable tbody tr:first-child {
+        font-weight: normal;
+    }
+    input[type=text] {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid rgba(190, 16, 94, 0.95);
+        box-shadow: none;
+        transition-duration: .2s;
+        transition-property: border-bottom-color, padding-right, box-shadow, -webkit-box-shadow;
+    }
+    input[type=text]:focus {
+        box-shadow: rgba(197, 17, 98, 0.984) 0px 0.982733px 0px 0px;
+    }
+    .btn {
+        position: relative;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-width: 88px;
+        height: 36px;
+        margin: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        color: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: .04em;
+        white-space: nowrap;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        vertical-align: middle;
+        background: 0 0;
+        border: none;
+        border-radius: 2px;
+        outline: 0;
+        cursor: pointer;
+        -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        will-change: box-shadow;
+        zoom: 1;
+        -webkit-user-drag: none;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+    .btn-sm {
+        position: relative;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-width: 88px;
+        height: 36px;
+        margin: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        color: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: .04em;
+        white-space: nowrap;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        vertical-align: middle;
+        background: 0 0;
+        border: none;
+        border-radius: 2px;
+        outline: 0;
+        cursor: pointer;
+        -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        will-change: box-shadow;
+        zoom: 1;
+        -webkit-user-drag: none;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+    .btn-lg {
+        position: relative;
+        display: inline-block;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-width: 88px;
+        height: 36px;
+        margin: 0;
+        padding: 0 16px;
+        overflow: hidden;
+        color: inherit;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: .04em;
+        white-space: nowrap;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        vertical-align: middle;
+        background: 0 0;
+        border: none;
+        border-radius: 2px;
+        outline: 0;
+        cursor: pointer;
+        -webkit-transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        transition: all .2s cubic-bezier(.4, 0, .2, 1), box-shadow .2s cubic-bezier(.4, 0, 1, 1), -webkit-box-shadow .2s cubic-bezier(.4, 0, 1, 1);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        will-change: box-shadow;
+        zoom: 1;
+        -webkit-user-drag: none;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    }
+    .btn-success {
+        background-color: #ff4081!important;
+        color: #fff!important;
+    }
+    .btn-success:hover {
+        opacity: .87;
+    }
+    .btn-warning {
+        background-color: #FF1744!important;
+        color: #fff!important;
+    }
+    .btn-warning:hover {
+        opacity: .87;
+    }
+    .modal-content {
+        border: none;
+        border-radius: 2px;
+        box-shadow: 0 11px 15px -7px rgba(0, 0, 0, .2), 0 24px 38px 3px rgba(0, 0, 0, .14), 0 9px 46px 8px rgba(0, 0, 0, .12);
+    }
+    .modal-content .modal-title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .modal-content .modal-footer .btn-lg {
+        box-shadow: none;
+        background-color: transparent !important;
+        color: #e91e63 !important;
+    }
+    .modal-content .modal-footer .btn-lg:hover {
+        background-color: rgba(0, 0, 0, .1) !important;
+    }
+    .modal-content .modal-header,
+    .modal-footer {
+        border: none;
+    }
+}
